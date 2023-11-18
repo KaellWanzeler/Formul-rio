@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="/3_Projetos/Projeto-2/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Faça seu personagem do zero</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Faça o seu personagem</h1>
+                <p>Descreva as características e marque os opcionais que ele possui</p>
+                <form>
+                    <div class="box-input">
+                        <label for="nome">Nome do seu personagem <span class="requered-field">*</span></label>
+                        <input type="text" name="nome" id="nome" class="block" placeholder="Nome do seu personagem"
+                            minlength="4" maxlength="30" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="força">Força do seu personagem <span class="requered-field">*</span></label>
+                        <input type="number" name="força" id="força" class="block" placeholder="Defina a força"
+                            required>
+                    </div>
+                    <div class="box-input">
+                            <label for="lore">Historia do seu personagem<span class="requered-field">*</span></label>
+                            <textarea name="lore" id="lore" placeholder="Historia do seu personagem" class="block" required></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="rankd">Rank do seu personagem<span class="requered-field">*</span></label>
+                        <input type="text" name="rankd" id="rankd" class="block" placeholder="Rank do seu personagem" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="affiliation">Espécie do seu personagem<span class="requered-field">*</span></label>
+                        <input type="text" name="affiliation" id="affiliation" class="block" placeholder="Espécie do seu personagem" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="preço">Valor do seu personagem<span class="requered-field">*</span></label>
+                        <input type="number" name="preço" id="preço" class="block" placeholder="Valor do seu personagem" required>
+                    </div>
+                    <div class="box-input">
+                        <label for="birthday">aniversário do seu personagem<span class="requered-field">*</span></label>
+                        <input type="date" name="birthday" id="birthday" class="block" required>
+                    </div>
+                    <div class="box-input">
+                       <p>Tipo de arma <span class="requered-field">*</span></p>
+                       <input type="radio" name="arma" id="Espada">
+                       <label for="Espada">Espada</label>
+                       <input type="radio" name="arma" id="pistola">
+                       <label for="pistola">Pistola</label>
+                       <input type="radio" name="arma" id="arco">
+                       <label for="arco">Arco</label>
+                    </div>
+                    <div class="optional-box">
+                        <p>Habilidades</p>
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="agua" name="optional[]" value="agua">
+                                <label for="agua">Água</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="Terra" name="optional[]" value="Terra">
+                                <label for="Terra">Terra</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="sombra" name="optional[]" value="sombra">
+                                <label for="sombra">Sombra</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="fogo" name="optional[]" value="fogo">
+                                <label for="fogo">Fogo</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input type="checkbox" id="ar" name="optional[]" value="ar">
+                                <label for="ar">Vento</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="luz" name="optional[]" value="luz">
+                                <label for="luz">Luz</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="tp" name="optional[]" value="tp">
+                                <label for="tp">Teletransporte</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="raio" name="optional[]" value="raio">
+                                <label for="raio">Eletrecidade</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do seu personagem <span class="requered-field">*</span></p>
+                        <input type="file" multiple accept="img/png , img/jpg" id="imagens" name="imagens" class="ip" required>
+                    </div>
+                        <input type="submit" value="Enviar" class="btn-submit">
+                 </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
